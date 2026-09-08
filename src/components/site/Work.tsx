@@ -5,7 +5,7 @@ import { Reveal } from "./Reveal";
 import { MagneticLink } from "./MagneticButton";
 import clinicflow from "@/assets/alistyle.png";
 import jobtrack from "@/assets/travelo.png";
-import sqlquest from "@/assets/work-sqlquest.jpg";
+import sqlquest from "@/assets/dostana-hajj-and-umrah.png";
 
 const projects = [
   {
