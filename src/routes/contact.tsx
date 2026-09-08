@@ -4,9 +4,9 @@ import { Footer } from "@/components/site/Footer";
 import { Reveal } from "@/components/site/Reveal";
 import { ProjectBriefForm } from "@/components/site/ProjectBriefForm";
 
-const title = "Start a Project — Will & Way";
+const title = "Get in Touch — Will & Way";
 const description =
-  "Send Will & Way a project brief. Tell us what you want to build and we'll reply within 48 hours with an approach and estimate.";
+  "Have a project in mind? Tell us what you want to build and we'll get back to you within 48 hours — no pressure, no sales pitch.";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -22,8 +22,9 @@ export const Route = createFileRoute("/contact")({
 
 const facts = [
   { k: "Email", v: "hello@willandway.com" },
+  { k: "WhatsApp", v: "+91 8867374425" },
   { k: "Response time", v: "Within 48 hours" },
-  { k: "Availability", v: "Taking projects now" },
+  { k: "Availability", v: "Currently taking projects" },
 ];
 
 function ContactPage() {
@@ -40,14 +41,14 @@ function ContactPage() {
           <Reveal>
             <p className="eyebrow flex items-center gap-3">
               <span className="h-px w-8 bg-accent" aria-hidden />
-              Project Brief
+              Get in Touch
             </p>
           </Reveal>
           <Reveal delay={100}>
             <h1 className="display-xl mt-6 text-[clamp(2.5rem,9vw,7rem)]">
               Let's build
               <br />
-              <span className="text-muted-foreground">something.</span>
+              <span className="text-muted-foreground">something great.</span>
             </h1>
           </Reveal>
 
@@ -68,9 +69,9 @@ function ContactPage() {
                 ))}
               </div>
               <p className="mt-8 text-sm leading-relaxed text-muted-foreground">
-                Not sure what you need yet? Send whatever you have — a sketch, a
-                spreadsheet, a paragraph. We'll help you shape the scope before anyone
-                writes a line of code.
+                Not sure what you need yet? Send whatever you have — a rough
+                idea, a sketch, a paragraph. We'll help you shape the scope
+                before anyone writes a line of code.
               </p>
             </Reveal>
           </div>
@@ -80,3 +81,4 @@ function ContactPage() {
     </>
   );
 }
+

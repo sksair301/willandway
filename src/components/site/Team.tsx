@@ -1,7 +1,7 @@
 import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
-import sabir from "@/assets/team-sabir.jpg";
-import partner from "@/assets/team-partner.jpg";
+import sabir from "@/assets/team-partner.png";
+import partner from "@/assets/team-sabir.jpg";
 
 const people = [
   {
