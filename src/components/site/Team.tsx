@@ -1,11 +1,11 @@
 import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
-import sabir from "@/assets/team-partner.png";
-import partner from "@/assets/team-sabir.jpg";
+import sabir from "@/assets/team-sabir.png";
+import partner from "@/assets/team-partner.jpg";
 
 const people = [
   {
-    name: "Sabir",
+    name: "Sabir Shaikh",
     role: "Full Stack Developer",
     body: "I build reliable web applications, APIs and backend systems with a focus on clean architecture, performance and practical solutions.",
     skills: ["Laravel", "PHP", "MySQL", "JavaScript", "REST APIs"],
@@ -13,12 +13,12 @@ const people = [
     alt: "Portrait of Sabir, full stack developer at Will & Way",
   },
   {
-    name: "Aman",
+    name: "Iqra Koradia",
     role: "Full Stack / Frontend Developer",
     body: "Focused on creating clean interfaces and building digital experiences that are intuitive, responsive and easy to use.",
     skills: ["JavaScript", "React", "UI/UX", "Frontend"],
     image: partner,
-    alt: "Portrait of Aman, frontend developer at Will & Way",
+    alt: "Portrait of Iqra, frontend developer at Will & Way",
   },
 ];
 

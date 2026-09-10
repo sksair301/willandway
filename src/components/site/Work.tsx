@@ -9,6 +9,7 @@ import sqlquest from "@/assets/dostana-hajj-and-umrah.png";
 
 const projects = [
   {
+    id: "clinicflow",
     no: "01",
     name: "ClinicFlow",
     category: "Healthcare • SaaS",
@@ -20,6 +21,7 @@ const projects = [
     alt: "ClinicFlow appointment dashboard with daily doctor schedule and patient list",
   },
   {
+    id: "jobtrack",
     no: "02",
     name: "JobTrack",
     category: "Productivity • Web App",
@@ -31,6 +33,7 @@ const projects = [
     alt: "JobTrack application board with status columns and interview timeline",
   },
   {
+    id: "sqlquest",
     no: "03",
     name: "SQL Quest",
     category: "EdTech • Interactive",
@@ -101,7 +104,7 @@ export function Work() {
                     ))}
                   </ul>
 
-                  <MagneticLink to="/contact" variant="outline" className="mt-8">
+                  <MagneticLink to={`/work/${project.id}`} variant="outline" className="mt-8">
                     {project.cta} <ArrowRight className="size-4" />
                   </MagneticLink>
                 </div>

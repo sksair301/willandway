@@ -1,4 +1,4 @@
-import { createFileRoute } from "@tanstack/react-router";
+import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight } from "lucide-react";
 import { Navbar } from "@/components/site/Navbar";
 import { Footer } from "@/components/site/Footer";
@@ -48,37 +48,39 @@ function WorkPage() {
           <div className="mt-16 grid gap-px border border-border bg-border lg:grid-cols-2">
             {projects.map((project, i) => (
               <Reveal key={project.name} delay={i * 100}>
-                <article className="group h-full bg-background p-6 transition-colors duration-500 hover:bg-surface sm:p-8">
-                  <div className="overflow-hidden border border-border">
-                    <img
-                      src={project.image}
-                      alt={project.alt}
-                      width={1600}
-                      height={1008}
-                      loading="lazy"
-                      className="w-full transition-transform duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]"
-                    />
-                  </div>
-                  <div className="mt-7 flex items-baseline justify-between gap-4">
-                    <h2 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
-                      {project.name}
-                    </h2>
-                    <span className="eyebrow text-right">{project.category}</span>
-                  </div>
-                  <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
-                    {project.description}
-                  </p>
-                  <ul className="mt-6 flex flex-wrap gap-2">
-                    {project.tags.map((tag) => (
-                      <li
-                        key={tag}
-                        className="border border-border px-3 py-1.5 font-display text-[0.68rem] uppercase tracking-[0.14em] text-muted-foreground"
-                      >
-                        {tag}
-                      </li>
-                    ))}
-                  </ul>
-                </article>
+                <Link to={`/work/${project.id}`} className="block h-full group">
+                  <article className="h-full bg-background p-6 transition-colors duration-500 hover:bg-surface sm:p-8">
+                    <div className="overflow-hidden border border-border">
+                      <img
+                        src={project.image}
+                        alt={project.alt}
+                        width={1600}
+                        height={1008}
+                        loading="lazy"
+                        className="w-full transition-transform duration-[900ms] ease-[cubic-bezier(0.16,1,0.3,1)] group-hover:scale-[1.04]"
+                      />
+                    </div>
+                    <div className="mt-7 flex items-baseline justify-between gap-4">
+                      <h2 className="font-display text-2xl font-bold tracking-tight sm:text-3xl">
+                        {project.name}
+                      </h2>
+                      <span className="eyebrow text-right">{project.category}</span>
+                    </div>
+                    <p className="mt-4 text-sm leading-relaxed text-muted-foreground">
+                      {project.description}
+                    </p>
+                    <ul className="mt-6 flex flex-wrap gap-2">
+                      {project.tags.map((tag) => (
+                        <li
+                          key={tag}
+                          className="border border-border px-3 py-1.5 font-display text-[0.68rem] uppercase tracking-[0.14em] text-muted-foreground"
+                        >
+                          {tag}
+                        </li>
+                      ))}
+                    </ul>
+                  </article>
+                </Link>
               </Reveal>
             ))}
           </div>
