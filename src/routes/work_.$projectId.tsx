@@ -16,8 +16,8 @@ export const Route = createFileRoute("/work_/$projectId")({
   },
   head: ({ loaderData }) => ({
     meta: [
-      { title: `${loaderData.name} — Will & Way` },
-      { name: "description", content: loaderData.description },
+      { title: `${loaderData?.name || "Project"} — Will & Way` },
+      { name: "description", content: loaderData?.description || "" },
     ],
   }),
   component: ProjectDetail,

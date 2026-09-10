@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: "Can you take over an existing codebase?",
-    a: "Absolutely. We review the existing code, understand what's working and what isn't, and continue building from there — without unnecessary rewrites.",
+    a: "Absolutely. We review the existing code, understand what's working and what isn't, and continue building from there without unnecessary rewrites.",
   },
   {
     q: "Do you offer support after the project is live?",

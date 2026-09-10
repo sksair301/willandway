@@ -5,31 +5,24 @@ import { Reveal } from "./Reveal";
 const services = [
   {
     no: "01",
-    title: "Websites",
-    body: "Fast, modern websites designed to make your business look credible and convert visitors into customers.",
-    tags: ["Landing Pages", "Business Websites", "Portfolio", "E-commerce"],
-    more: "Performance budgets, SEO fundamentals and a CMS you can actually edit.",
+    title: "Websites & Mobile Apps",
+    body: "High-converting, modern digital products built for scale and performance.",
+    tags: ["React", "Next.js", "Node", "Figma"],
+    more: "Fast, accessible, and designed for optimal user experience across all devices.",
   },
   {
     no: "02",
-    title: "Web Applications",
-    body: "Powerful web applications designed around the way your business actually works.",
-    tags: ["Dashboards", "CRM", "Management Systems", "Internal Tools"],
-    more: "Roles, permissions, reporting and workflows mapped to your real process.",
+    title: "Data & Business Strategy",
+    body: "Market research, user analytics, and business intelligence to guide your decisions.",
+    tags: ["Analytics", "BI", "Research"],
+    more: "Turn raw data into actionable insights that drive growth and uncover opportunities.",
   },
   {
     no: "03",
-    title: "SaaS & Digital Products",
-    body: "From an early idea to a scalable product, we turn concepts into usable digital experiences.",
-    tags: ["SaaS", "MVP", "Platforms", "Subscriptions"],
-    more: "Scoped MVPs shipped in weeks, with a roadmap for what comes after.",
-  },
-  {
-    no: "04",
-    title: "APIs & Backend",
-    body: "Reliable backend systems and APIs that keep your product secure, scalable and connected.",
-    tags: ["Laravel", "PHP", "MySQL", "REST APIs"],
-    more: "Clean architecture, documented endpoints and integrations that hold up.",
+    title: "Presentation & Pitch Assets",
+    body: "High-impact pitch decks, product visualizers, and investor presentations.",
+    tags: ["Pitch Decks", "Visualizers", "Storytelling"],
+    more: "Clear storytelling and sharp visuals that build confidence and help you secure funding.",
   },
 ];
 
@@ -37,9 +30,9 @@ export function Services() {
   return (
     <section id="services" className="scroll-mt-24 border-t border-border py-20 sm:py-28">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
-        <SectionHeading eyebrow="Services" title="What we build" />
+        <SectionHeading eyebrow="Services" title="Full-stack execution, zero fluff." />
 
-        <div className="mt-14 grid gap-px border border-border bg-border sm:grid-cols-2">
+        <div className="mt-14 grid gap-px border border-border bg-border sm:grid-cols-3">
           {services.map((service, i) => (
             <Reveal key={service.no} delay={i * 90}>
               <article className="group relative h-full bg-background p-7 transition-colors duration-500 hover:bg-surface sm:p-10">

@@ -1,27 +1,21 @@
-import { MessagesSquare, Zap, Target, HeartHandshake } from "lucide-react";
 import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
 
 const reasons = [
   {
-    icon: MessagesSquare,
-    title: "Direct Communication",
-    body: "You work directly with the people building your product.",
+    no: "01",
+    title: "Listen & Unpack",
+    body: "We sit down with you, ask what you expect, identify what you want to improve, and clarify your vision.",
   },
   {
-    icon: Zap,
-    title: "Fast Iteration",
-    body: "Less bureaucracy. Faster decisions. Faster progress.",
+    no: "02",
+    title: "Define the Way",
+    body: "We build an agile, lean roadmap, removing unnecessary features to focus strictly on what moves the needle.",
   },
   {
-    icon: Target,
-    title: "Business First",
-    body: "We focus on solving the actual problem instead of adding unnecessary complexity.",
-  },
-  {
-    icon: HeartHandshake,
-    title: "Long-Term Partnership",
-    body: "We don't disappear after launch. We're here when your product needs us.",
+    no: "03",
+    title: "Build & Ship",
+    body: "Rapid execution bridging interactive UI/UX prototypes and scalable full-stack code.",
   },
 ];
 
@@ -30,25 +24,24 @@ export function WhyUs() {
     <section className="border-t border-border py-20 sm:py-28">
       <div className="mx-auto max-w-[1400px] px-5 sm:px-8">
         <SectionHeading
-          eyebrow="Why Will & Way"
+          eyebrow="Partnership"
           title={
             <>
-              Two minds.
+              We build WITH you,
               <br />
-              <span className="text-muted-foreground">One direction.</span>
+              <span className="text-muted-foreground">not just FOR you.</span>
             </>
           }
         />
 
-        <div className="mt-14 grid gap-px border border-border bg-border sm:grid-cols-2 lg:grid-cols-4">
+        <div className="mt-14 grid gap-px border border-border bg-border sm:grid-cols-3">
           {reasons.map((reason, i) => (
             <Reveal key={reason.title} delay={i * 90}>
               <div className="group h-full bg-background p-7 transition-colors duration-500 hover:bg-surface">
-                <reason.icon
-                  className="size-6 text-muted-foreground transition-colors duration-500 group-hover:text-accent"
-                  strokeWidth={1.5}
-                />
-                <h3 className="mt-8 font-display text-lg font-semibold tracking-tight">
+                <span className="border border-border px-3 py-1 font-display text-sm font-semibold text-accent">
+                  {reason.no}
+                </span>
+                <h3 className="mt-8 font-display text-xl font-semibold tracking-tight text-accent">
                   {reason.title}
                 </h3>
                 <p className="mt-3 text-sm leading-relaxed text-muted-foreground">

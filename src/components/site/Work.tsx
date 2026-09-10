@@ -3,46 +3,46 @@ import { cn } from "@/lib/utils";
 import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
 import { MagneticLink } from "./MagneticButton";
-import clinicflow from "@/assets/alistyle.png";
-import jobtrack from "@/assets/travelo.png";
-import sqlquest from "@/assets/dostana-hajj-and-umrah.png";
+import alistyle from "@/assets/alistyle.png";
+import travelo from "@/assets/travelo.png";
+import hajjAndUmrah from "@/assets/dostana-hajj-and-umrah.png";
 
 const projects = [
   {
-    id: "clinicflow",
+    id: "alistyle",
     no: "01",
-    name: "ClinicFlow",
-    category: "Healthcare • SaaS",
+    name: "AliStyle",
+    category: "E-Commerce • Web App",
     description:
-      "A modern clinic appointment and management platform designed to simplify scheduling, patient management and everyday clinic operations.",
-    tags: ["Laravel", "PHP", "MySQL", "JavaScript"],
+      "A modern e-commerce platform designed to provide a seamless shopping experience for clothing and lifestyle products.",
+    tags: ["React", "Node.js", "Tailwind CSS"],
     cta: "View Case Study",
-    image: clinicflow,
-    alt: "ClinicFlow appointment dashboard with daily doctor schedule and patient list",
+    image: alistyle,
+    alt: "AliStyle e-commerce store with product listings and shopping cart",
   },
   {
-    id: "jobtrack",
+    id: "travelo",
     no: "02",
-    name: "JobTrack",
-    category: "Productivity • Web App",
+    name: "Travelo",
+    category: "Travel • Platform",
     description:
-      "A clean job application tracking platform that helps candidates organize applications, interviews, companies and follow-ups.",
-    tags: ["Laravel", "JavaScript", "MySQL"],
+      "A comprehensive travel platform for discovering destinations, searching travelling plans, places, and booking hotels.",
+    tags: ["Next.js", "TypeScript", "PostgreSQL"],
     cta: "View Case Study",
-    image: jobtrack,
-    alt: "JobTrack application board with status columns and interview timeline",
+    image: travelo,
+    alt: "Travelo platform showing travel plans, places, and hotel bookings",
   },
   {
-    id: "sqlquest",
+    id: "hajj-and-umrah",
     no: "03",
-    name: "SQL Quest",
-    category: "EdTech • Interactive",
+    name: "Hajj & Umrah",
+    category: "Travel • Religious",
     description:
-      "A game-inspired SQL learning platform that makes database learning interactive through challenges, levels and progression.",
-    tags: ["JavaScript", "SQL", "Web App"],
+      "A specialized travel platform dedicated to facilitating smooth and spiritual journeys for Hajj and Umrah pilgrims.",
+    tags: ["React", "Node.js", "PostgreSQL"],
     cta: "View Project",
-    image: sqlquest,
-    alt: "SQL Quest query editor with level progression and results table",
+    image: hajjAndUmrah,
+    alt: "Hajj and Umrah travel website showcasing pilgrimage packages and guides",
   },
 ];
 

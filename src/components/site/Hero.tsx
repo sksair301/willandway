@@ -2,7 +2,7 @@ import { ArrowDown, ArrowRight } from "lucide-react";
 import { MagneticLink, MagneticAnchor } from "./MagneticButton";
 import { Reveal } from "./Reveal";
 
-const words = ["You have", "the idea.", "We know", "the way."];
+const words = ["WILL & WAY", "Ideas,", "Made", "Possible."];
 
 export function Hero() {
   return (
@@ -49,8 +49,7 @@ export function Hero() {
         <div className="mt-12 grid gap-10 lg:grid-cols-[1.1fr_1fr] lg:items-end">
           <Reveal delay={520}>
             <p className="max-w-xl text-base leading-relaxed text-muted-foreground sm:text-lg">
-              We design and build modern websites, web applications and digital products
-              that help businesses move forward.
+              The global creative technology studio turning rough briefs into live, market-ready digital products, no matter where you are in the world.
             </p>
             <div className="mt-9 flex flex-col gap-3 sm:flex-row">
               <MagneticLink to="/contact" variant="accent">
@@ -65,9 +64,9 @@ export function Hero() {
           <Reveal delay={620} className="hidden lg:block">
             <div className="ml-auto flex max-w-sm flex-col gap-3">
               {[
-                { k: "Built for", v: "Startups & Founders" },
-                { k: "Stack", v: "Laravel · React · MySQL" },
-                { k: "Team size", v: "Two. That's the point." },
+                { k: "Service", v: "Worldwide Service" },
+                { k: "Collaboration", v: "24/7 Asynchronous & Live" },
+                { k: "Delivery", v: "Full-Stack Delivery" },
               ].map((item, i) => (
                 <div
                   key={item.k}

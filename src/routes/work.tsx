@@ -8,7 +8,7 @@ import { projects } from "@/components/site/Work";
 
 const title = "Selected Work — Will & Way";
 const description =
-  "Projects built by Will & Way: ClinicFlow clinic management, JobTrack application tracking and SQL Quest interactive SQL learning.";
+  "Projects built by Will & Way: AliStyle e-commerce, Travelo travel planning and Hajj & Umrah pilgrimage platform.";
 
 export const Route = createFileRoute("/work")({
   head: () => ({
@@ -48,7 +48,7 @@ function WorkPage() {
           <div className="mt-16 grid gap-px border border-border bg-border lg:grid-cols-2">
             {projects.map((project, i) => (
               <Reveal key={project.name} delay={i * 100}>
-                <Link to={`/work/${project.id}`} className="block h-full group">
+                <Link to="/work/$projectId" params={{ projectId: project.id }} className="block h-full group">
                   <article className="h-full bg-background p-6 transition-colors duration-500 hover:bg-surface sm:p-8">
                     <div className="overflow-hidden border border-border">
                       <img
