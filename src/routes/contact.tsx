@@ -21,8 +21,8 @@ export const Route = createFileRoute("/contact")({
 });
 
 const facts = [
-  { k: "Email", v: "hello@willandway.com" },
-  { k: "WhatsApp", v: "+91 8867374425" },
+  { k: "Email", v: "hey.willandway@gmail.com" },
+  { k: "WhatsApp", v: "+91 9152726273" },
   { k: "Response time", v: "Within 48 hours" },
   { k: "Availability", v: "Currently taking projects" },
 ];

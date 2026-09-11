@@ -4,7 +4,7 @@ import { toast } from "sonner";
 import { MagneticButton } from "./MagneticButton";
 
 // ─── Change this to your real WhatsApp number (country code, no +, no spaces) ───
-const WHATSAPP_NUMBER = "918867374425";
+const WHATSAPP_NUMBER = "919152726273";
 
 const projectTypes = [
   "Website / Landing Page",

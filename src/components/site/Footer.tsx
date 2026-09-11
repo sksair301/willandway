@@ -4,8 +4,8 @@ import logoLockup from "@/assets/logo-mark.jpg";
 
 const socials = [
   { label: "GitHub", href: "https://github.com" },
-  { label: "LinkedIn", href: "https://linkedin.com" },
-  { label: "Instagram", href: "https://instagram.com" },
+  { label: "LinkedIn", href: "https://linkedin.com/company/willandwaystudio/" },
+  { label: "Instagram", href: "https://instagram.com/willandway.co/" },
 ];
 
 export function Footer() {
@@ -75,10 +75,10 @@ export function Footer() {
             <div>
               <p className="eyebrow">Say hello</p>
               <a
-                href="mailto:hello@willandway.com"
+                href="mailto:hey.willandway@gmail.com"
                 className="mt-4 block text-sm text-foreground underline decoration-border underline-offset-4 transition-colors hover:text-accent"
               >
-                hello@willandway.com
+                hey.willandway@gmail.com
               </a>
             </div>
           </div>
